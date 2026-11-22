@@ -19,7 +19,7 @@ The static output is in `out/` and uses the `/lotos2` project path. The public R
 
 ## GitHub Pages
 
-The site is live at [`https://vsvdesignpro.github.io/lotos2/`](https://vsvdesignpro.github.io/lotos2/). The owner selected **Settings → Pages → Build and deployment → GitHub Actions** and successfully ran the first manual workflow; the live page was opened and visually checked on a phone-sized viewport. The repository contains `.github/workflows/pages.yml`. It runs only when manually dispatched, so future source pushes will not publish automatically. To deploy an update, open **Actions → Publish educational site to GitHub Pages → Run workflow** on `main`. The workflow installs pinned dependencies, checks TypeScript, builds the static `out/` directory, and deploys that directory. The project path is `/lotos2`.
+The site is live at [`https://vsvdesignpro.github.io/lotos2/`](https://vsvdesignpro.github.io/lotos2/). The owner selected **Settings → Pages → Build and deployment → GitHub Actions** and successfully ran the first deployment manually; the live page was opened and visually checked on a phone-sized viewport. The repository contains `.github/workflows/pages.yml`. Every push to `main` now starts a build and deployment automatically; changes in other branches do not publish. The workflow installs pinned dependencies, checks TypeScript, builds the static `out/` directory, and deploys that directory. The project path is `/lotos2`. Check the **Actions** tab for the result of each deployment.
 
 ## Publication checks
 
